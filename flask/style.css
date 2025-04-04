@@ -1,0 +1,26 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column ;
+    align-content:center ;
+    flex-wrap: wrap;
+
+}
+
+.item{
+    background-color: rgb(203, 196, 255);
+    border: solid black;
+    border-radius: 5px;
+    height: 100px;
+    width: 150px;
+    margin: 10px;
+    cell padding: 100px;
+}
+.box{
+    order: 5;
+
+}

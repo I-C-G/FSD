@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        p::first-line {
+            color: red;
+            font-variant: small-caps;
+        }
+        div::first-letter {
+            font-size: xx-large;
+            color: rgb(99, 200, 247);
+        }
+        p.intro::first-letter {
+            font-size: 200%;
+            color: green;
+        }
+        h1::before {
+            content: url('https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png');
+            color:pink;
+        }
+        h1::after {
+            content: url("bg_img.jpg");
+            color:pink;
+        }
+        ::marker {
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit impedit, aspernatur quisquam minima fuga quia rerum
+        iusto consequatur, eaque ea fugiat dignissimos neque porro a mollitia ad perspiciatis molestias aperiam
+        exercitationem maiores fugit adipisci ducimus esse voluptates. Fuga, amet sunt. Ab molestias deserunt aut
+        nostrum, necessitatibus nulla consequuntur ipsum. Fuga accusamus necessitatibus corporis mollitia alias
+        perspiciatis cumque dolorem veritatis earum, ratione nostrum ut in nemo, dignissimos corrupti laudantium ducimus
+        totam voluptatem placeat maiores. Illo asperiores assumenda non perspiciatis? Corporis, iste facilis? Recusandae
+        ipsam minima impedit dolorum eos eveniet nihil quod praesentium. Animi odio similique sit, neque deleniti
+        perferendis quod atque.</p>
+    <div>Hello , How are you</div>
+
+    <p class="intro">My name ishan </p>
+    <h1>I am 19 years old</h1>
+    <ol>
+        <li>Kaho na pyaar hai</li>
+        <li>Tum hi ho</li>
+        <li>kya hua tera wada</li>
+    </ol>
+</body>
+
+</html>

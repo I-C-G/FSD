@@ -1,0 +1,93 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #282c34;
+    color: white;
+    padding: 1rem;
+}
+
+.main-container {
+    padding: 1rem;
+}
+
+/* Flexbox Containers */
+.container {
+    display: flex;
+    background: #f9f9f9;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    gap: 1rem;
+    flex-wrap: nowrap; /* Default behavior */
+}
+
+.container h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Box Styles */
+.box {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    flex: 1;
+}
+
+.tall-box {
+    background: #FF5722;
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+/* Container-Specific Flexbox Properties */
+
+/* 1. Basic Flexbox Layout */
+.container-1 {
+    justify-content: space-between; /* Default for space */
+    align-items: center;
+}
+
+/* 2. Justify-Content */
+.container-2 {
+    justify-content: space-around; /* Distribute extra space evenly */
+}
+
+/* 3. Align-Items */
+.container-3 {
+    align-items: flex-start; /* Items align at the top */
+}
+
+/* 4. Flex Direction */
+.container-4 {
+    flex-direction: column; /* Stacks items vertically */
+}
+
+/* 5. Flex Wrap */
+.container-5 {
+    flex-wrap: wrap; /* Allows items to wrap onto new lines */
+    justify-content: center; /* Center items */
+}
+
+/* Footer */
+.footer {
+    margin-top: 2rem;
+    font-size: 1rem;
+    background: #333;
+    color: white;
+    padding: 1rem;
+}

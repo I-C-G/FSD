@@ -1,10 +1,9 @@
-age=int(input ("Enter your age") )
-if age >0:
-    if age >18:
-        print("U ARE ELIGIBLE TO VOTE")
-    else:
-        print("NOT ELIGIBLE TO VOTE")
-else:
-     print ("ENTER A VALID AGE")
+# a=int(input("ENTER 1ST NO."))
+# b=int(input("ENTER 2ND NO."))
+# print(a+b)
+# print(a%b)
+# c=input("ENTER ANYTHING")
+# print(type(c))
+# print (a>b)    
 
 
