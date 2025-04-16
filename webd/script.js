@@ -1,103 +1,214 @@
-// var person2=new.Objes=ct ();
-// person2.name='ishanchandragupta'{
-
+// function sayHello() {
+//     let you = prompt('What is your name?');
+//    console.log('Hello', you + '!');
 // }
-// function hello(){
-//     document.getElementById("para").innerHTML="hellllllllo";
+// sayHello();
 
-//     alert("hello")
+// let varContainingFunction = function() {
+//     let varInFunction = "I'm a variable in a function";
+//     console.log("hi There!",varInFunction);
+// };
+
+// varContainingFunction();
+
+// function tester(para1, para2) {
+//     return para1 + " " + para2;
 // }
-
-// var per = "hello"
-// var pi = 3.14
-
-// document.write(pi + "<br>")
-// document.write(per + "<br>")
-
-// console.log(typeof(pi))
+// const test = tester("Hello", "World!");
+// console.log(test);
 
 
-// var person = {
-//     firstname : "john",
-//     lastname : "mki",
-
-//     id : "5566",
-
-//     getinfo :function(){
-//         return this.firstname + " "+ this.lastname;
-//     }
+// function add(a, b) {
+//     console.log(a+b);
 // }
+// parseInt(prompt("Enter first number: ", function(a)));
+// parseInt(prompt("Enter second number: ", function(b)));
+// add(a, b); 
 
 
-// var person2 = new Object();
-// person2.name = "krishna";
-// person2.age = 32;
-// person2.marrage = true;
-// person2.address = {};
-// person2.address.street = "nagar gali"
-// person2.address['address']['flat'] = 33;
-// console.log(person2);
-
-// document.getElementById("demo").innerHTML = person.getinfo();
-
-// <script>
-//     var locales={
-//         europe: function(){
-
-
-//         }
-//     }
-// </script>
-
-// function show(){
-//     var a ="a is a local outer variable ";
-//     document.write(a+"<br>");
-//     function disk(){
-//         var b="b is a local inner variable");
-//         document.write(b + <br>)
-//     }
-// }
-// var name ='John';
-// function first(){
-//     var a ='hello ';
-//     second ();
-//     var x=a + name;}
-
-
-// function second (){
-//         var b='hi';
-//         third();
-//         var z = b = name;
-     
-//     }
-// function third (){
-//     var c='hey !';
-//     var z= console+'name';
-// }
-// var age=20;
-// function addTwoNumbers(x,y)
-// {
+// function addTwoNumbers(x=2,y=3){
 //     console.log(x+y);
 // }
+// addTwoNumbers()
+// addTwoNumbers(6,6)
+// addTwoNumbers(10)
+// addTwoNumbers(1,2,3,4)
 
-// addTwoNumbers();
-// addTwoNumbers(6,6);
-// addTwoNumbers(10); ls-visibe cd cd ..
-// addTwoNumbers(1,2,3,4);
-// SPECIALL FUNCTION  ARROW FUNC
-// let doingArrowStuff = x=>console.log(x);
-// let addTwoNumbers = (x,y => console.log(x+y))
 
-// let spread=["so","much","fun"];
-// let message=["JavaScript","is",...spread,"and","very","powerful"];
-// console.log(message);
 
-// function addFourNumbers(w,x,y,z,a)
-// {
-//     console.log(x+y+z+a);
+
+
+// SPECIAL FUNCTIONS
+
+// let doingstuff=(x)=>console.log(x);
+// doingstuff("hi there!");
+
+// let addTwoNumbers = (a, b) => console.log(a + b);
+// addTwoNumbers(5,3);
+
+// const arr = [1, 2, 3, 4, 5];
+// arr.forEach(element => console.log(element));
+
+
+
+// SPREAD OPERATOR
+
+// let spread=["some", "random", "words"]; 
+// let spread2=["more", "random",...spread, "words"];
+// let spread2=["more", "random",spread, "words"];
+// console.log(spread2);
+
+
+// function addNumbers(x,y){
+//     console.log(x+y);
+// } 
+// let arr=[1,2];
+// addNumbers(...arr);
+
+
+//REST OPERATOR
+
+// function someFunction(param1 , ...param2){
+//     console.log(param1,param2);
+// }   
+// someFunction("hello", "world", "this", "is", "a", "test");
+
+
+//RETURNING FUNCTION VALUES
+
+
+// function addTwoNumbers(x,y){
+//     return x+y; }
+// let resultArr=[];
+// for(let i=0; i<10; i++){
+//     let result=addTwoNumbers(i,2*i);
+//     resultArr.push(result);}
+        
+// console.log(resultArr);
+
+// RETURNING WITH ARROW FUNCTION
+
+// let addTwoNumbers=(x,y) => x+y; 
+// let result = addTwoNumbers(5,3);
+// console.log(result);
+
+// let addTwoNumbers=(x,y) => {
+//     console.log("Adding.....");
+//     return x+y;     
 // }
-// let arr=[5,9]
-// function someFunction(param1,param2){
-//     console.log(param1,param2)
+
+//SCOPE
+
+// function testAvailibility(x){
+//     console.log("Available here:", x);  
+// }
+// testAvailibility("hi there!");
+// console.log("Not available here:", x);
+
+// function testAvailibility(y){
+//     let y="Local Variable";
+//     console.log("Available here:", y);
+// }
+// testAvailibility();
+// console.log("Not available here:", y);  
+
+// function doingstuff(){
+//     if(true){
+//         console.log(x);
+//         var x="local";
+//     }
+// }
+// doingstuff();
+
+// function doingstuff(){
+//     if(true){
+//         console.log(x);
+//         let x="local";
+//     }
+// }
+// doingstuff();
+// GLOBAL VARIABLE
+
+// let globalVar="Accessible everywhere"
+// console.log("Outside function",globalVar);
+
+// function doingstuff(){
+//     console.log("Inside function",globalVar);
+// }
+// doingstuff();
+
+// let x="global";
+
+// function doingstuff(){
+//     let x="local";
+//     console.log("Inside function",x);
+// }   
+// doingstuff();
+// console.log("Outside function",x);
+// IIFE-IMMEDIATELY INVOKED FUNCTION EXPRESSION
+// (function (){
+//     console.log("IIFE");
+// })
+// ();
+
+//Recursive functions
+
+// function getRecursive(nr){
+//     console.log(nr);
+//     getRecursive(--nr);
+//     }
+// getRecursive(5);
+
+// function getRecursive(nr){
+//         console.log(nr);
+//         if(nr > 0){
+//            getRecursive(--nr);}
+// }getRecursive(5);
+
+// function logrecursive(nr){
+//     console.log(nr);
+//     if(nr > 0){
+//         logrecursive(nr-1);
+//     }else{
+//         console.log("End of recursion");
+//     }
+//     console.log(nr);
+// }
+// logrecursive(5);
+
+//Iteration is better than recursion
+
+//Nested functions
+
+// function doOuterFunctionStuff(nr){
+//     console.log("Outer function", nr);
+//     doInnerFunctionStuff(nr);
+//     function doInnerFunctionStuff(x){
+//         console.log("Inner function", x+7);
+//     console.log("Inner function", nr);
+//     }
 // }
 
+// let functionvariable = function() {
+//     console.log("I am a function variable");
+// }
+// functionvariable();
+// doflexibleStuff = function() {
+//     console.log("I am a flexible function variable");
+// }
+
+// let youGotIt = function() { 
+//     console.log("You got it!");
+// };
+// setTimeout(youGotIt, 2000);
+
+//SET Interval
+
+// let interval = setInterval(function() {
+//     console.log("hi there!");
+// }
+// , 1000);  
+
+// (function()){
+//     console.log("IIFE");
+//  }();
