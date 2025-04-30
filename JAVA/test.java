@@ -19,3 +19,5 @@ class test{
         o1.display();
     }
 }
+//to create a class person with 2 attributes first name and last name 
+// create 2 instance for the class and set the attribute value using constructor overloading and at the end display the information using display function
